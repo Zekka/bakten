@@ -1,0 +1,537 @@
+Downloading/unpacking py.test
+  Getting page http://pypi.python.org/simple/py.test
+  Could not fetch URL http://pypi.python.org/simple/py.test: HTTP Error 404: Not Found (py.test does not have any releases)
+  Will skip URL http://pypi.python.org/simple/py.test when looking for download links for py.test
+  Getting page http://pypi.python.org/simple/
+Exception:
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 252, in main
+    self.run(options, args)
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 408, in run
+    requirement_set.install_files(finder, force_root_egg_info=self.bundle)
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 1750, in install_files
+    url = finder.find_requirement(req_to_install, upgrade=self.upgrade)
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 996, in find_requirement
+    url_name = self._find_url_name(Link(self.index_urls[0]), url_name, req)
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 1075, in _find_url_name
+    for link in page.links:
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 2220, in links
+    url = self.clean_link(urlparse.urljoin(self.url, url))
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 2266, in clean_link
+    lambda match: '%%%2x' % ord(match.group(0)), url)
+KeyboardInterrupt
+------------------------------------------------------------
+/usr/bin/pip run on Tue Jul  9 16:28:03 2013
+Downloading/unpacking pytest
+  Getting page http://pypi.python.org/simple/pytest
+  URLs to search for versions for pytest:
+  * http://pypi.python.org/simple/pytest
+  Analyzing links from page https://pypi.python.org/simple/pytest/
+    Found link https://pypi.python.org/packages/source/p/pytest/pytest-2.1.2.zip#md5=e75a115a38898636c2ce8bbe0e492760 (from https://pypi.python.org/simple/pytest/), version: 2.1.2
+    Found link https://pypi.python.org/packages/source/p/pytest/pytest-2.0.2.zip#md5=ed1b80b4b9975401d3bd62bf309874f4 (from https://pypi.python.org/simple/pytest/), version: 2.0.2
+    Found link https://pypi.python.org/packages/source/p/pytest/pytest-2.0.0.zip#md5=f07c521dfd5a540f3dfea1846e58dab7 (from https://pypi.python.org/simple/pytest/), version: 2.0.0
+    Found link https://pypi.python.org/packages/source/p/pytest/pytest-2.2.0.zip#md5=fa904c0f879c51f62058dbafe93cbe2f (from https://pypi.python.org/simple/pytest/), version: 2.2.0
+    Found link https://pypi.python.org/packages/source/p/pytest/pytest-2.1.1.zip#md5=f41ca8e05d351fcbaf34a60a2311f764 (from https://pypi.python.org/simple/pytest/), version: 2.1.1
+    Found link https://pypi.python.org/packages/source/p/pytest/pytest-2.0.3.zip#md5=0e4fe2865a7cf9f86a2aaffd3d72ebbd (from https://pypi.python.org/simple/pytest/), version: 2.0.3
+    Found link https://pypi.python.org/packages/source/p/pytest/pytest-2.2.2.zip#md5=69ddec90ba88ace06ba38927dee00632 (from https://pypi.python.org/simple/pytest/), version: 2.2.2
+    Found link https://pypi.python.org/packages/source/p/pytest/pytest-2.0.1.zip#md5=0667d82556db906a7429171589d95e4d (from https://pypi.python.org/simple/pytest/), version: 2.0.1
+    Found link https://pypi.python.org/packages/source/p/pytest/pytest-2.3.0.zip#md5=c6a79ce5c3e156feaf94b57b96ca0d4d (from https://pypi.python.org/simple/pytest/), version: 2.3.0
+    Found link https://pypi.python.org/packages/source/p/pytest/pytest-2.1.3.zip#md5=f9862126e4b1157f7691fc9993255244 (from https://pypi.python.org/simple/pytest/), version: 2.1.3
+    Found link https://pypi.python.org/packages/source/p/pytest/pytest-2.3.1.zip#md5=f8603ab43889a773fbf3d5246fa24b9d (from https://pypi.python.org/simple/pytest/), version: 2.3.1
+    Found link https://pypi.python.org/packages/source/p/pytest/pytest-2.3.3.zip#md5=a02805c7131bfd42abe91b3f607a0d3a (from https://pypi.python.org/simple/pytest/), version: 2.3.3
+    Found link https://pypi.python.org/packages/source/p/pytest/pytest-2.1.0.zip#md5=85e70de34628a3412309dddad63c21ce (from https://pypi.python.org/simple/pytest/), version: 2.1.0
+    Found link https://pypi.python.org/packages/source/p/pytest/pytest-2.2.1.zip#md5=3e7d5352205401c6f73976fbf1b48e68 (from https://pypi.python.org/simple/pytest/), version: 2.2.1
+    Found link https://pypi.python.org/packages/source/p/pytest/pytest-2.2.3.zip#md5=f9b66b28086b8543baa4820d5f880baa (from https://pypi.python.org/simple/pytest/), version: 2.2.3
+    Found link https://pypi.python.org/packages/source/p/pytest/pytest-2.2.4.zip#md5=73ed098e39978890b83cbea1f1ab2a74 (from https://pypi.python.org/simple/pytest/), version: 2.2.4
+    Found link https://pypi.python.org/packages/source/p/pytest/pytest-2.3.2.zip#md5=ccffb2f8b1581203bcd5e18cd6eac4f7 (from https://pypi.python.org/simple/pytest/), version: 2.3.2
+    Found link https://pypi.python.org/packages/source/p/pytest/pytest-2.3.4.zip#md5=db319fef9c310dc46798b285d3da3aa1 (from https://pypi.python.org/simple/pytest/), version: 2.3.4
+    Found link https://pypi.python.org/packages/source/p/pytest/pytest-2.3.5.tar.gz#md5=18f150e7be96b5fe3c388b0e817b8087 (from https://pypi.python.org/simple/pytest/), version: 2.3.5
+  Using version 2.3.5 (newest of versions: 2.3.5, 2.3.4, 2.3.3, 2.3.2, 2.3.1, 2.3.0, 2.2.4, 2.2.3, 2.2.2, 2.2.1, 2.2.0, 2.1.3, 2.1.2, 2.1.1, 2.1.0, 2.0.3, 2.0.2, 2.0.1, 2.0.0)
+  Downloading from URL https://pypi.python.org/packages/source/p/pytest/pytest-2.3.5.tar.gz#md5=18f150e7be96b5fe3c388b0e817b8087 (from https://pypi.python.org/simple/pytest/)
+  Running setup.py egg_info for package pytest
+    running egg_info
+    creating pip-egg-info/pytest.egg-info
+    writing requirements to pip-egg-info/pytest.egg-info/requires.txt
+    writing pip-egg-info/pytest.egg-info/PKG-INFO
+    writing top-level names to pip-egg-info/pytest.egg-info/top_level.txt
+    writing dependency_links to pip-egg-info/pytest.egg-info/dependency_links.txt
+    writing entry points to pip-egg-info/pytest.egg-info/entry_points.txt
+    writing manifest file 'pip-egg-info/pytest.egg-info/SOURCES.txt'
+    warning: manifest_maker: standard file '-c' not found
+    reading manifest file 'pip-egg-info/pytest.egg-info/SOURCES.txt'
+    reading manifest template 'MANIFEST.in'
+    writing manifest file 'pip-egg-info/pytest.egg-info/SOURCES.txt'
+  Source in ./build/pytest has version 2.3.5, which satisfies requirement pytest
+Downloading/unpacking py>=1.4.13dev6 (from pytest)
+  Getting page http://pypi.python.org/simple/py
+  URLs to search for versions for py>=1.4.13dev6 (from pytest):
+  * http://pypi.python.org/simple/py
+  Analyzing links from page https://pypi.python.org/simple/py/
+    Found link https://pypi.python.org/packages/source/p/py/py-1.4.10.zip#md5=d166e940d8f1c54ba752e52f21528bf2 (from https://pypi.python.org/simple/py/), version: 1.4.10
+    Found link https://pypi.python.org/packages/source/p/py/py-1.1.0.tar.gz#md5=fb5d1fcf3173d9c4dce70cfc8888e359 (from https://pypi.python.org/simple/py/), version: 1.1.0
+    Found link https://pypi.python.org/packages/source/p/py/py-1.4.6.zip#md5=18381334c69450a080ede4d04efb4b52 (from https://pypi.python.org/simple/py/), version: 1.4.6
+    Found link https://pypi.python.org/packages/source/p/py/py-1.3.3.tar.gz#md5=bf0dbc3ce4c18ead263cb5679e5164b4 (from https://pypi.python.org/simple/py/), version: 1.3.3
+    Found link https://pypi.python.org/packages/source/p/py/py-0.9.1.tar.gz#md5=daab8d9a814eab31809d973370d23600 (from https://pypi.python.org/simple/py/), version: 0.9.1
+    Found link https://pypi.python.org/packages/source/p/py/py-1.4.3.zip#md5=f20018fda42165f2edb4226c8eafcae4 (from https://pypi.python.org/simple/py/), version: 1.4.3
+    Found link https://pypi.python.org/packages/source/p/py/py-1.2.1.tar.gz#md5=7b3f4c0da62131e6dd25f7f3fda013cc (from https://pypi.python.org/simple/py/), version: 1.2.1
+    Found link https://pypi.python.org/packages/source/p/py/py-1.2.0.tar.gz#md5=c75a9d0a9211a7ecddc981dd8a0158db (from https://pypi.python.org/simple/py/), version: 1.2.0
+    Found link https://pypi.python.org/packages/source/p/py/py-1.4.2.zip#md5=fd00ef0c7dbaaeb1b37259e571ba28a5 (from https://pypi.python.org/simple/py/), version: 1.4.2
+    Found link https://pypi.python.org/packages/source/p/py/py-0.9.2.tar.gz#md5=2c996d78867f6ad64dc5aabf1185aaf7 (from https://pypi.python.org/simple/py/), version: 0.9.2
+    Found link https://pypi.python.org/packages/source/p/py/py-1.1.1.tar.gz#md5=4d0b5eaf9af09b7682fb07d4c5a2fd45 (from https://pypi.python.org/simple/py/), version: 1.1.1
+    Found link https://pypi.python.org/packages/source/p/py/py-1.4.4.zip#md5=5f94e19ce855df25d430265a19287db0 (from https://pypi.python.org/simple/py/), version: 1.4.4
+    Found link https://pypi.python.org/packages/source/p/py/py-1.0.0.tar.gz#md5=3223ff8fcaefd060be13262e367794ce (from https://pypi.python.org/simple/py/), version: 1.0.0
+    Found link https://pypi.python.org/packages/source/p/py/py-1.4.0.zip#md5=1441a30f94a0f0cfc47d69a792606bff (from https://pypi.python.org/simple/py/), version: 1.4.0
+    Found link https://pypi.python.org/packages/source/p/py/py-1.3.0.tar.gz#md5=986f75a6303da690e384995633677739 (from https://pypi.python.org/simple/py/), version: 1.3.0
+    Skipping link https://pypi.python.org/packages/2.4/p/py/py-0.9.2-py2.4-win32.egg#md5=4eac7f97b8efed2271cc0c63c8796f23 (from https://pypi.python.org/simple/py/); unknown archive format: .egg
+    Found link https://pypi.python.org/packages/source/p/py/py-1.0.2.tar.gz#md5=4d2e9878b0113159fae2f3ed0cfc081d (from https://pypi.python.org/simple/py/), version: 1.0.2
+    Found link https://pypi.python.org/packages/source/p/py/py-1.3.1.tar.gz#md5=0cf1fa3d0f281a2bb7ed38ad0b7169da (from https://pypi.python.org/simple/py/), version: 1.3.1
+    Found link https://pypi.python.org/packages/source/p/py/py-1.4.9.zip#md5=471a88edcdae2f9689c0193972a1a1f8 (from https://pypi.python.org/simple/py/), version: 1.4.9
+    Found link https://pypi.python.org/packages/source/p/py/py-1.4.14.tar.gz#md5=f441639a1d3f0bbbc955cd22d8127d5e (from https://pypi.python.org/simple/py/), version: 1.4.14
+    Found link https://pypi.python.org/packages/source/p/py/py-1.4.12.zip#md5=8230f8241dea2517757fab50b4f84449 (from https://pypi.python.org/simple/py/), version: 1.4.12
+    Found link https://pypi.python.org/packages/source/p/py/py-1.4.7.dev3.zip#md5=e83ff50740ed06972157629c14433eb8 (from https://pypi.python.org/simple/py/), version: 1.4.7.dev3
+    Found link https://pypi.python.org/packages/source/p/py/py-1.4.8.zip#md5=4577e659435568d168c66b69a3cb968a (from https://pypi.python.org/simple/py/), version: 1.4.8
+    Found link https://pypi.python.org/packages/source/p/py/py-1.4.7.zip#md5=fb1b2608eb4f52f67405fb316dbab09f (from https://pypi.python.org/simple/py/), version: 1.4.7
+    Found link https://pypi.python.org/packages/source/p/py/py-1.4.1.zip#md5=0e73fa13d01627761b50e614403e1180 (from https://pypi.python.org/simple/py/), version: 1.4.1
+    Found link https://pypi.python.org/packages/source/p/py/py-1.3.2.tar.gz#md5=9e3d99966385854fc07004e8a07cf9d4 (from https://pypi.python.org/simple/py/), version: 1.3.2
+    Found link https://pypi.python.org/packages/source/p/py/py-1.4.11.zip#md5=d03d4f78606f1c44018021b9a6f2878b (from https://pypi.python.org/simple/py/), version: 1.4.11
+    Found link https://pypi.python.org/packages/source/p/py/py-1.0.1.tar.gz#md5=d64444015bac78e0c73ac285f9423750 (from https://pypi.python.org/simple/py/), version: 1.0.1
+    Found link https://pypi.python.org/packages/source/p/py/py-0.9.2.zip#md5=8447b2ba4c7b4062fcd08aab3377f040 (from https://pypi.python.org/simple/py/), version: 0.9.2
+    Found link https://pypi.python.org/packages/source/p/py/py-1.4.5.zip#md5=d2a51f8c9eca43e2953cdec72989d6ec (from https://pypi.python.org/simple/py/), version: 1.4.5
+    Skipping link https://pypi.python.org/packages/2.5/p/py/py-0.9.2-py2.5-win32.egg#md5=afc5e92b1e20475be0f2fe805479de6d (from https://pypi.python.org/simple/py/); unknown archive format: .egg
+    Found link https://pypi.python.org/packages/source/p/py/py-1.4.13.tar.gz#md5=3857dc8309d5f284669b81184253c2bb (from https://pypi.python.org/simple/py/), version: 1.4.13
+    Found link https://pypi.python.org/packages/source/p/py/py-1.3.4.tar.gz#md5=b64d73a04121c1c4e27c7ec335ef87c8 (from https://pypi.python.org/simple/py/), version: 1.3.4
+    Found link https://pypi.python.org/packages/source/p/py/py-1.4.15.tar.gz#md5=b5afc772d242d2dbcf7a2fcf3080a799 (from https://pypi.python.org/simple/py/), version: 1.4.15
+  Ignoring link https://pypi.python.org/packages/source/p/py/py-1.4.12.zip#md5=8230f8241dea2517757fab50b4f84449 (from https://pypi.python.org/simple/py/), version 1.4.12 doesn't match >=1.4.13dev6
+  Ignoring link https://pypi.python.org/packages/source/p/py/py-1.4.11.zip#md5=d03d4f78606f1c44018021b9a6f2878b (from https://pypi.python.org/simple/py/), version 1.4.11 doesn't match >=1.4.13dev6
+  Ignoring link https://pypi.python.org/packages/source/p/py/py-1.4.10.zip#md5=d166e940d8f1c54ba752e52f21528bf2 (from https://pypi.python.org/simple/py/), version 1.4.10 doesn't match >=1.4.13dev6
+  Ignoring link https://pypi.python.org/packages/source/p/py/py-1.4.9.zip#md5=471a88edcdae2f9689c0193972a1a1f8 (from https://pypi.python.org/simple/py/), version 1.4.9 doesn't match >=1.4.13dev6
+  Ignoring link https://pypi.python.org/packages/source/p/py/py-1.4.8.zip#md5=4577e659435568d168c66b69a3cb968a (from https://pypi.python.org/simple/py/), version 1.4.8 doesn't match >=1.4.13dev6
+  Ignoring link https://pypi.python.org/packages/source/p/py/py-1.4.7.zip#md5=fb1b2608eb4f52f67405fb316dbab09f (from https://pypi.python.org/simple/py/), version 1.4.7 doesn't match >=1.4.13dev6
+  Ignoring link https://pypi.python.org/packages/source/p/py/py-1.4.7.dev3.zip#md5=e83ff50740ed06972157629c14433eb8 (from https://pypi.python.org/simple/py/), version 1.4.7.dev3 doesn't match >=1.4.13dev6
+  Ignoring link https://pypi.python.org/packages/source/p/py/py-1.4.6.zip#md5=18381334c69450a080ede4d04efb4b52 (from https://pypi.python.org/simple/py/), version 1.4.6 doesn't match >=1.4.13dev6
+  Ignoring link https://pypi.python.org/packages/source/p/py/py-1.4.5.zip#md5=d2a51f8c9eca43e2953cdec72989d6ec (from https://pypi.python.org/simple/py/), version 1.4.5 doesn't match >=1.4.13dev6
+  Ignoring link https://pypi.python.org/packages/source/p/py/py-1.4.4.zip#md5=5f94e19ce855df25d430265a19287db0 (from https://pypi.python.org/simple/py/), version 1.4.4 doesn't match >=1.4.13dev6
+  Ignoring link https://pypi.python.org/packages/source/p/py/py-1.4.3.zip#md5=f20018fda42165f2edb4226c8eafcae4 (from https://pypi.python.org/simple/py/), version 1.4.3 doesn't match >=1.4.13dev6
+  Ignoring link https://pypi.python.org/packages/source/p/py/py-1.4.2.zip#md5=fd00ef0c7dbaaeb1b37259e571ba28a5 (from https://pypi.python.org/simple/py/), version 1.4.2 doesn't match >=1.4.13dev6
+  Ignoring link https://pypi.python.org/packages/source/p/py/py-1.4.1.zip#md5=0e73fa13d01627761b50e614403e1180 (from https://pypi.python.org/simple/py/), version 1.4.1 doesn't match >=1.4.13dev6
+  Ignoring link https://pypi.python.org/packages/source/p/py/py-1.4.0.zip#md5=1441a30f94a0f0cfc47d69a792606bff (from https://pypi.python.org/simple/py/), version 1.4.0 doesn't match >=1.4.13dev6
+  Ignoring link https://pypi.python.org/packages/source/p/py/py-1.3.4.tar.gz#md5=b64d73a04121c1c4e27c7ec335ef87c8 (from https://pypi.python.org/simple/py/), version 1.3.4 doesn't match >=1.4.13dev6
+  Ignoring link https://pypi.python.org/packages/source/p/py/py-1.3.3.tar.gz#md5=bf0dbc3ce4c18ead263cb5679e5164b4 (from https://pypi.python.org/simple/py/), version 1.3.3 doesn't match >=1.4.13dev6
+  Ignoring link https://pypi.python.org/packages/source/p/py/py-1.3.2.tar.gz#md5=9e3d99966385854fc07004e8a07cf9d4 (from https://pypi.python.org/simple/py/), version 1.3.2 doesn't match >=1.4.13dev6
+  Ignoring link https://pypi.python.org/packages/source/p/py/py-1.3.1.tar.gz#md5=0cf1fa3d0f281a2bb7ed38ad0b7169da (from https://pypi.python.org/simple/py/), version 1.3.1 doesn't match >=1.4.13dev6
+  Ignoring link https://pypi.python.org/packages/source/p/py/py-1.3.0.tar.gz#md5=986f75a6303da690e384995633677739 (from https://pypi.python.org/simple/py/), version 1.3.0 doesn't match >=1.4.13dev6
+  Ignoring link https://pypi.python.org/packages/source/p/py/py-1.2.1.tar.gz#md5=7b3f4c0da62131e6dd25f7f3fda013cc (from https://pypi.python.org/simple/py/), version 1.2.1 doesn't match >=1.4.13dev6
+  Ignoring link https://pypi.python.org/packages/source/p/py/py-1.2.0.tar.gz#md5=c75a9d0a9211a7ecddc981dd8a0158db (from https://pypi.python.org/simple/py/), version 1.2.0 doesn't match >=1.4.13dev6
+  Ignoring link https://pypi.python.org/packages/source/p/py/py-1.1.1.tar.gz#md5=4d0b5eaf9af09b7682fb07d4c5a2fd45 (from https://pypi.python.org/simple/py/), version 1.1.1 doesn't match >=1.4.13dev6
+  Ignoring link https://pypi.python.org/packages/source/p/py/py-1.1.0.tar.gz#md5=fb5d1fcf3173d9c4dce70cfc8888e359 (from https://pypi.python.org/simple/py/), version 1.1.0 doesn't match >=1.4.13dev6
+  Ignoring link https://pypi.python.org/packages/source/p/py/py-1.0.2.tar.gz#md5=4d2e9878b0113159fae2f3ed0cfc081d (from https://pypi.python.org/simple/py/), version 1.0.2 doesn't match >=1.4.13dev6
+  Ignoring link https://pypi.python.org/packages/source/p/py/py-1.0.1.tar.gz#md5=d64444015bac78e0c73ac285f9423750 (from https://pypi.python.org/simple/py/), version 1.0.1 doesn't match >=1.4.13dev6
+  Ignoring link https://pypi.python.org/packages/source/p/py/py-1.0.0.tar.gz#md5=3223ff8fcaefd060be13262e367794ce (from https://pypi.python.org/simple/py/), version 1.0.0 doesn't match >=1.4.13dev6
+  Ignoring link https://pypi.python.org/packages/source/p/py/py-0.9.2.tar.gz#md5=2c996d78867f6ad64dc5aabf1185aaf7 (from https://pypi.python.org/simple/py/), version 0.9.2 doesn't match >=1.4.13dev6
+  Ignoring link https://pypi.python.org/packages/source/p/py/py-0.9.2.zip#md5=8447b2ba4c7b4062fcd08aab3377f040 (from https://pypi.python.org/simple/py/), version 0.9.2 doesn't match >=1.4.13dev6
+  Ignoring link https://pypi.python.org/packages/source/p/py/py-0.9.1.tar.gz#md5=daab8d9a814eab31809d973370d23600 (from https://pypi.python.org/simple/py/), version 0.9.1 doesn't match >=1.4.13dev6
+  Using version 1.4.15 (newest of versions: 1.4.15, 1.4.14, 1.4.13)
+  Downloading from URL https://pypi.python.org/packages/source/p/py/py-1.4.15.tar.gz#md5=b5afc772d242d2dbcf7a2fcf3080a799 (from https://pypi.python.org/simple/py/)
+  Running setup.py egg_info for package py
+    running egg_info
+    creating pip-egg-info/py.egg-info
+    writing pip-egg-info/py.egg-info/PKG-INFO
+    writing top-level names to pip-egg-info/py.egg-info/top_level.txt
+    writing dependency_links to pip-egg-info/py.egg-info/dependency_links.txt
+    writing manifest file 'pip-egg-info/py.egg-info/SOURCES.txt'
+    warning: manifest_maker: standard file '-c' not found
+    reading manifest file 'pip-egg-info/py.egg-info/SOURCES.txt'
+    reading manifest template 'MANIFEST.in'
+    writing manifest file 'pip-egg-info/py.egg-info/SOURCES.txt'
+  Source in ./build/py has version 1.4.15, which satisfies requirement py>=1.4.13dev6 (from pytest)
+Installing collected packages: py, pytest
+  Running setup.py install for py
+    Running command /usr/bin/python -c "import setuptools; __file__='/home/vinegareater/programming/ironpython/SLBot/build/py/setup.py'; execfile('/home/vinegareater/programming/ironpython/SLBot/build/py/setup.py')" install --single-version-externally-managed --record /tmp/pip-lotqp9-record/install-record.txt --install-headers /home/vinegareater/programming/ironpython/SLBot/lib/include
+    running install
+    running build
+    running build_py
+    creating build
+    creating build/lib.linux-i686-2.6
+    creating build/lib.linux-i686-2.6/py
+    copying py/_iniconfig.py -> build/lib.linux-i686-2.6/py
+    copying py/__init__.py -> build/lib.linux-i686-2.6/py
+    copying py/_error.py -> build/lib.linux-i686-2.6/py
+    copying py/_std.py -> build/lib.linux-i686-2.6/py
+    copying py/_apipkg.py -> build/lib.linux-i686-2.6/py
+    copying py/__metainfo.py -> build/lib.linux-i686-2.6/py
+    copying py/test.py -> build/lib.linux-i686-2.6/py
+    copying py/_xmlgen.py -> build/lib.linux-i686-2.6/py
+    copying py/_builtin.py -> build/lib.linux-i686-2.6/py
+    creating build/lib.linux-i686-2.6/py/_code
+    copying py/_code/_assertionnew.py -> build/lib.linux-i686-2.6/py/_code
+    copying py/_code/source.py -> build/lib.linux-i686-2.6/py/_code
+    copying py/_code/code.py -> build/lib.linux-i686-2.6/py/_code
+    copying py/_code/__init__.py -> build/lib.linux-i686-2.6/py/_code
+    copying py/_code/_assertionold.py -> build/lib.linux-i686-2.6/py/_code
+    copying py/_code/assertion.py -> build/lib.linux-i686-2.6/py/_code
+    creating build/lib.linux-i686-2.6/py/_io
+    copying py/_io/saferepr.py -> build/lib.linux-i686-2.6/py/_io
+    copying py/_io/terminalwriter.py -> build/lib.linux-i686-2.6/py/_io
+    copying py/_io/__init__.py -> build/lib.linux-i686-2.6/py/_io
+    copying py/_io/capture.py -> build/lib.linux-i686-2.6/py/_io
+    creating build/lib.linux-i686-2.6/py/_log
+    copying py/_log/__init__.py -> build/lib.linux-i686-2.6/py/_log
+    copying py/_log/log.py -> build/lib.linux-i686-2.6/py/_log
+    copying py/_log/warning.py -> build/lib.linux-i686-2.6/py/_log
+    creating build/lib.linux-i686-2.6/py/_path
+    copying py/_path/svnwc.py -> build/lib.linux-i686-2.6/py/_path
+    copying py/_path/svnurl.py -> build/lib.linux-i686-2.6/py/_path
+    copying py/_path/__init__.py -> build/lib.linux-i686-2.6/py/_path
+    copying py/_path/local.py -> build/lib.linux-i686-2.6/py/_path
+    copying py/_path/common.py -> build/lib.linux-i686-2.6/py/_path
+    copying py/_path/cacheutil.py -> build/lib.linux-i686-2.6/py/_path
+    creating build/lib.linux-i686-2.6/py/_process
+    copying py/_process/forkedfunc.py -> build/lib.linux-i686-2.6/py/_process
+    copying py/_process/__init__.py -> build/lib.linux-i686-2.6/py/_process
+    copying py/_process/cmdexec.py -> build/lib.linux-i686-2.6/py/_process
+    copying py/_process/killproc.py -> build/lib.linux-i686-2.6/py/_process
+    running install_lib
+    creating /usr/local/lib/python2.6/dist-packages/py
+    error: could not create '/usr/local/lib/python2.6/dist-packages/py': Permission denied
+    Complete output from command /usr/bin/python -c "import setuptools; __file__='/home/vinegareater/programming/ironpython/SLBot/build/py/setup.py'; execfile('/home/vinegareater/programming/ironpython/SLBot/build/py/setup.py')" install --single-version-externally-managed --record /tmp/pip-lotqp9-record/install-record.txt --install-headers /home/vinegareater/programming/ironpython/SLBot/lib/include:
+    running install
+
+running build
+
+running build_py
+
+creating build
+
+creating build/lib.linux-i686-2.6
+
+creating build/lib.linux-i686-2.6/py
+
+copying py/_iniconfig.py -> build/lib.linux-i686-2.6/py
+
+copying py/__init__.py -> build/lib.linux-i686-2.6/py
+
+copying py/_error.py -> build/lib.linux-i686-2.6/py
+
+copying py/_std.py -> build/lib.linux-i686-2.6/py
+
+copying py/_apipkg.py -> build/lib.linux-i686-2.6/py
+
+copying py/__metainfo.py -> build/lib.linux-i686-2.6/py
+
+copying py/test.py -> build/lib.linux-i686-2.6/py
+
+copying py/_xmlgen.py -> build/lib.linux-i686-2.6/py
+
+copying py/_builtin.py -> build/lib.linux-i686-2.6/py
+
+creating build/lib.linux-i686-2.6/py/_code
+
+copying py/_code/_assertionnew.py -> build/lib.linux-i686-2.6/py/_code
+
+copying py/_code/source.py -> build/lib.linux-i686-2.6/py/_code
+
+copying py/_code/code.py -> build/lib.linux-i686-2.6/py/_code
+
+copying py/_code/__init__.py -> build/lib.linux-i686-2.6/py/_code
+
+copying py/_code/_assertionold.py -> build/lib.linux-i686-2.6/py/_code
+
+copying py/_code/assertion.py -> build/lib.linux-i686-2.6/py/_code
+
+creating build/lib.linux-i686-2.6/py/_io
+
+copying py/_io/saferepr.py -> build/lib.linux-i686-2.6/py/_io
+
+copying py/_io/terminalwriter.py -> build/lib.linux-i686-2.6/py/_io
+
+copying py/_io/__init__.py -> build/lib.linux-i686-2.6/py/_io
+
+copying py/_io/capture.py -> build/lib.linux-i686-2.6/py/_io
+
+creating build/lib.linux-i686-2.6/py/_log
+
+copying py/_log/__init__.py -> build/lib.linux-i686-2.6/py/_log
+
+copying py/_log/log.py -> build/lib.linux-i686-2.6/py/_log
+
+copying py/_log/warning.py -> build/lib.linux-i686-2.6/py/_log
+
+creating build/lib.linux-i686-2.6/py/_path
+
+copying py/_path/svnwc.py -> build/lib.linux-i686-2.6/py/_path
+
+copying py/_path/svnurl.py -> build/lib.linux-i686-2.6/py/_path
+
+copying py/_path/__init__.py -> build/lib.linux-i686-2.6/py/_path
+
+copying py/_path/local.py -> build/lib.linux-i686-2.6/py/_path
+
+copying py/_path/common.py -> build/lib.linux-i686-2.6/py/_path
+
+copying py/_path/cacheutil.py -> build/lib.linux-i686-2.6/py/_path
+
+creating build/lib.linux-i686-2.6/py/_process
+
+copying py/_process/forkedfunc.py -> build/lib.linux-i686-2.6/py/_process
+
+copying py/_process/__init__.py -> build/lib.linux-i686-2.6/py/_process
+
+copying py/_process/cmdexec.py -> build/lib.linux-i686-2.6/py/_process
+
+copying py/_process/killproc.py -> build/lib.linux-i686-2.6/py/_process
+
+running install_lib
+
+creating /usr/local/lib/python2.6/dist-packages/py
+
+error: could not create '/usr/local/lib/python2.6/dist-packages/py': Permission denied
+
+----------------------------------------
+Command /usr/bin/python -c "import setuptools; __file__='/home/vinegareater/programming/ironpython/SLBot/build/py/setup.py'; execfile('/home/vinegareater/programming/ironpython/SLBot/build/py/setup.py')" install --single-version-externally-managed --record /tmp/pip-lotqp9-record/install-record.txt --install-headers /home/vinegareater/programming/ironpython/SLBot/lib/include failed with error code 1
+Exception information:
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 252, in main
+    self.run(options, args)
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 410, in run
+    requirement_set.install(install_options)
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 2017, in install
+    requirement.install(install_options)
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 1515, in install
+    cwd=self.source_dir, filter_stdout=self._filter_install, show_stdout=False)
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 3543, in call_subprocess
+    % (command_desc, proc.returncode))
+InstallationError: Command /usr/bin/python -c "import setuptools; __file__='/home/vinegareater/programming/ironpython/SLBot/build/py/setup.py'; execfile('/home/vinegareater/programming/ironpython/SLBot/build/py/setup.py')" install --single-version-externally-managed --record /tmp/pip-lotqp9-record/install-record.txt --install-headers /home/vinegareater/programming/ironpython/SLBot/lib/include failed with error code 1
+------------------------------------------------------------
+/usr/bin/pip run on Tue Jul  9 16:52:04 2013
+Downloading/unpacking nose
+  Getting page http://pypi.python.org/simple/nose
+  URLs to search for versions for nose:
+  * http://pypi.python.org/simple/nose
+  Analyzing links from page https://pypi.python.org/simple/nose/
+    Skipping link https://pypi.python.org/packages/3.1/n/nose/nose-1.0.0-py3.1.egg#md5=fc89b2f4f06fb8f4a1623d8fa3601702 (from https://pypi.python.org/simple/nose/); unknown archive format: .egg
+    Found link https://pypi.python.org/packages/source/n/nose/nose-1.0.0.tar.gz#md5=47a4784c817afa6ef11a505b574584ed (from https://pypi.python.org/simple/nose/), version: 1.0.0
+    Found link https://pypi.python.org/packages/source/n/nose/nose-1.1.0.tar.gz#md5=629167a34d4f6dd4dfaa4de8ee323c93 (from https://pypi.python.org/simple/nose/), version: 1.1.0
+    Found link https://pypi.python.org/packages/source/n/nose/nose-1.2.0.tar.gz#md5=0db7fcfa8aefc5a461e90a1fc193863c (from https://pypi.python.org/simple/nose/), version: 1.2.0
+    Found link https://pypi.python.org/packages/source/n/nose/nose-1.2.1.tar.gz#md5=735e3f1ce8b07e70ee1b742a8a53585a (from https://pypi.python.org/simple/nose/), version: 1.2.1
+    Found link https://pypi.python.org/packages/source/n/nose/nose-1.1.1.tar.gz#md5=dc3025249c7abd27ac9020ec13b40db9 (from https://pypi.python.org/simple/nose/), version: 1.1.1
+    Found link https://pypi.python.org/packages/source/n/nose/nose-1.3.0.tar.gz#md5=95d6d32b9d6b029c3c65674bd9e7eabe (from https://pypi.python.org/simple/nose/), version: 1.3.0
+    Found link https://pypi.python.org/packages/source/n/nose/nose-1.1.2.tar.gz#md5=144f237b615e23f21f6a50b2183aa817 (from https://pypi.python.org/simple/nose/), version: 1.1.2
+    Found link https://github.com/nose-devs/nose/tarball/master#egg=nose-dev (from https://pypi.python.org/simple/nose/), version: dev
+  Using version 1.3.0 (newest of versions: 1.3.0, 1.2.1, 1.2.0, 1.1.2, 1.1.1, 1.1.0, 1.0.0, dev)
+  Downloading from URL https://pypi.python.org/packages/source/n/nose/nose-1.3.0.tar.gz#md5=95d6d32b9d6b029c3c65674bd9e7eabe (from https://pypi.python.org/simple/nose/)
+  Running setup.py egg_info for package nose
+    running egg_info
+    creating pip-egg-info/nose.egg-info
+    writing pip-egg-info/nose.egg-info/PKG-INFO
+    writing top-level names to pip-egg-info/nose.egg-info/top_level.txt
+    writing dependency_links to pip-egg-info/nose.egg-info/dependency_links.txt
+    writing entry points to pip-egg-info/nose.egg-info/entry_points.txt
+    writing manifest file 'pip-egg-info/nose.egg-info/SOURCES.txt'
+    warning: manifest_maker: standard file '-c' not found
+    reading manifest file 'pip-egg-info/nose.egg-info/SOURCES.txt'
+    reading manifest template 'MANIFEST.in'
+    no previously-included directories found matching 'doc/.build'
+    writing manifest file 'pip-egg-info/nose.egg-info/SOURCES.txt'
+  Source in ./build/nose has version 1.3.0, which satisfies requirement nose
+Installing collected packages: nose
+  Running setup.py install for nose
+    Running command /usr/bin/python -c "import setuptools; __file__='/home/vinegareater/programming/ironpython/SLBot/build/nose/setup.py'; execfile('/home/vinegareater/programming/ironpython/SLBot/build/nose/setup.py')" install --single-version-externally-managed --record /tmp/pip-zUOrlA-record/install-record.txt --install-headers /home/vinegareater/programming/ironpython/SLBot/lib/include
+    running install
+    running build
+    running build_py
+    creating build
+    creating build/lib.linux-i686-2.6
+    creating build/lib.linux-i686-2.6/nose
+    copying nose/inspector.py -> build/lib.linux-i686-2.6/nose
+    copying nose/twistedtools.py -> build/lib.linux-i686-2.6/nose
+    copying nose/exc.py -> build/lib.linux-i686-2.6/nose
+    copying nose/proxy.py -> build/lib.linux-i686-2.6/nose
+    copying nose/case.py -> build/lib.linux-i686-2.6/nose
+    copying nose/pyversion.py -> build/lib.linux-i686-2.6/nose
+    copying nose/__init__.py -> build/lib.linux-i686-2.6/nose
+    copying nose/__main__.py -> build/lib.linux-i686-2.6/nose
+    copying nose/util.py -> build/lib.linux-i686-2.6/nose
+    copying nose/importer.py -> build/lib.linux-i686-2.6/nose
+    copying nose/config.py -> build/lib.linux-i686-2.6/nose
+    copying nose/suite.py -> build/lib.linux-i686-2.6/nose
+    copying nose/loader.py -> build/lib.linux-i686-2.6/nose
+    copying nose/result.py -> build/lib.linux-i686-2.6/nose
+    copying nose/commands.py -> build/lib.linux-i686-2.6/nose
+    copying nose/selector.py -> build/lib.linux-i686-2.6/nose
+    copying nose/failure.py -> build/lib.linux-i686-2.6/nose
+    copying nose/core.py -> build/lib.linux-i686-2.6/nose
+    creating build/lib.linux-i686-2.6/nose/tools
+    copying nose/tools/__init__.py -> build/lib.linux-i686-2.6/nose/tools
+    copying nose/tools/nontrivial.py -> build/lib.linux-i686-2.6/nose/tools
+    copying nose/tools/trivial.py -> build/lib.linux-i686-2.6/nose/tools
+    creating build/lib.linux-i686-2.6/nose/plugins
+    copying nose/plugins/debug.py -> build/lib.linux-i686-2.6/nose/plugins
+    copying nose/plugins/testid.py -> build/lib.linux-i686-2.6/nose/plugins
+    copying nose/plugins/errorclass.py -> build/lib.linux-i686-2.6/nose/plugins
+    copying nose/plugins/prof.py -> build/lib.linux-i686-2.6/nose/plugins
+    copying nose/plugins/attrib.py -> build/lib.linux-i686-2.6/nose/plugins
+    copying nose/plugins/cover.py -> build/lib.linux-i686-2.6/nose/plugins
+    copying nose/plugins/doctests.py -> build/lib.linux-i686-2.6/nose/plugins
+    copying nose/plugins/skip.py -> build/lib.linux-i686-2.6/nose/plugins
+    copying nose/plugins/collect.py -> build/lib.linux-i686-2.6/nose/plugins
+    copying nose/plugins/__init__.py -> build/lib.linux-i686-2.6/nose/plugins
+    copying nose/plugins/deprecated.py -> build/lib.linux-i686-2.6/nose/plugins
+    copying nose/plugins/multiprocess.py -> build/lib.linux-i686-2.6/nose/plugins
+    copying nose/plugins/plugintest.py -> build/lib.linux-i686-2.6/nose/plugins
+    copying nose/plugins/isolate.py -> build/lib.linux-i686-2.6/nose/plugins
+    copying nose/plugins/allmodules.py -> build/lib.linux-i686-2.6/nose/plugins
+    copying nose/plugins/builtin.py -> build/lib.linux-i686-2.6/nose/plugins
+    copying nose/plugins/xunit.py -> build/lib.linux-i686-2.6/nose/plugins
+    copying nose/plugins/manager.py -> build/lib.linux-i686-2.6/nose/plugins
+    copying nose/plugins/logcapture.py -> build/lib.linux-i686-2.6/nose/plugins
+    copying nose/plugins/failuredetail.py -> build/lib.linux-i686-2.6/nose/plugins
+    copying nose/plugins/base.py -> build/lib.linux-i686-2.6/nose/plugins
+    copying nose/plugins/capture.py -> build/lib.linux-i686-2.6/nose/plugins
+    creating build/lib.linux-i686-2.6/nose/sphinx
+    copying nose/sphinx/pluginopts.py -> build/lib.linux-i686-2.6/nose/sphinx
+    copying nose/sphinx/__init__.py -> build/lib.linux-i686-2.6/nose/sphinx
+    creating build/lib.linux-i686-2.6/nose/ext
+    copying nose/ext/__init__.py -> build/lib.linux-i686-2.6/nose/ext
+    copying nose/ext/dtcompat.py -> build/lib.linux-i686-2.6/nose/ext
+    copying nose/usage.txt -> build/lib.linux-i686-2.6/nose
+    running install_lib
+    creating /usr/local/lib/python2.6/dist-packages/nose
+    error: could not create '/usr/local/lib/python2.6/dist-packages/nose': Permission denied
+    Complete output from command /usr/bin/python -c "import setuptools; __file__='/home/vinegareater/programming/ironpython/SLBot/build/nose/setup.py'; execfile('/home/vinegareater/programming/ironpython/SLBot/build/nose/setup.py')" install --single-version-externally-managed --record /tmp/pip-zUOrlA-record/install-record.txt --install-headers /home/vinegareater/programming/ironpython/SLBot/lib/include:
+    running install
+
+running build
+
+running build_py
+
+creating build
+
+creating build/lib.linux-i686-2.6
+
+creating build/lib.linux-i686-2.6/nose
+
+copying nose/inspector.py -> build/lib.linux-i686-2.6/nose
+
+copying nose/twistedtools.py -> build/lib.linux-i686-2.6/nose
+
+copying nose/exc.py -> build/lib.linux-i686-2.6/nose
+
+copying nose/proxy.py -> build/lib.linux-i686-2.6/nose
+
+copying nose/case.py -> build/lib.linux-i686-2.6/nose
+
+copying nose/pyversion.py -> build/lib.linux-i686-2.6/nose
+
+copying nose/__init__.py -> build/lib.linux-i686-2.6/nose
+
+copying nose/__main__.py -> build/lib.linux-i686-2.6/nose
+
+copying nose/util.py -> build/lib.linux-i686-2.6/nose
+
+copying nose/importer.py -> build/lib.linux-i686-2.6/nose
+
+copying nose/config.py -> build/lib.linux-i686-2.6/nose
+
+copying nose/suite.py -> build/lib.linux-i686-2.6/nose
+
+copying nose/loader.py -> build/lib.linux-i686-2.6/nose
+
+copying nose/result.py -> build/lib.linux-i686-2.6/nose
+
+copying nose/commands.py -> build/lib.linux-i686-2.6/nose
+
+copying nose/selector.py -> build/lib.linux-i686-2.6/nose
+
+copying nose/failure.py -> build/lib.linux-i686-2.6/nose
+
+copying nose/core.py -> build/lib.linux-i686-2.6/nose
+
+creating build/lib.linux-i686-2.6/nose/tools
+
+copying nose/tools/__init__.py -> build/lib.linux-i686-2.6/nose/tools
+
+copying nose/tools/nontrivial.py -> build/lib.linux-i686-2.6/nose/tools
+
+copying nose/tools/trivial.py -> build/lib.linux-i686-2.6/nose/tools
+
+creating build/lib.linux-i686-2.6/nose/plugins
+
+copying nose/plugins/debug.py -> build/lib.linux-i686-2.6/nose/plugins
+
+copying nose/plugins/testid.py -> build/lib.linux-i686-2.6/nose/plugins
+
+copying nose/plugins/errorclass.py -> build/lib.linux-i686-2.6/nose/plugins
+
+copying nose/plugins/prof.py -> build/lib.linux-i686-2.6/nose/plugins
+
+copying nose/plugins/attrib.py -> build/lib.linux-i686-2.6/nose/plugins
+
+copying nose/plugins/cover.py -> build/lib.linux-i686-2.6/nose/plugins
+
+copying nose/plugins/doctests.py -> build/lib.linux-i686-2.6/nose/plugins
+
+copying nose/plugins/skip.py -> build/lib.linux-i686-2.6/nose/plugins
+
+copying nose/plugins/collect.py -> build/lib.linux-i686-2.6/nose/plugins
+
+copying nose/plugins/__init__.py -> build/lib.linux-i686-2.6/nose/plugins
+
+copying nose/plugins/deprecated.py -> build/lib.linux-i686-2.6/nose/plugins
+
+copying nose/plugins/multiprocess.py -> build/lib.linux-i686-2.6/nose/plugins
+
+copying nose/plugins/plugintest.py -> build/lib.linux-i686-2.6/nose/plugins
+
+copying nose/plugins/isolate.py -> build/lib.linux-i686-2.6/nose/plugins
+
+copying nose/plugins/allmodules.py -> build/lib.linux-i686-2.6/nose/plugins
+
+copying nose/plugins/builtin.py -> build/lib.linux-i686-2.6/nose/plugins
+
+copying nose/plugins/xunit.py -> build/lib.linux-i686-2.6/nose/plugins
+
+copying nose/plugins/manager.py -> build/lib.linux-i686-2.6/nose/plugins
+
+copying nose/plugins/logcapture.py -> build/lib.linux-i686-2.6/nose/plugins
+
+copying nose/plugins/failuredetail.py -> build/lib.linux-i686-2.6/nose/plugins
+
+copying nose/plugins/base.py -> build/lib.linux-i686-2.6/nose/plugins
+
+copying nose/plugins/capture.py -> build/lib.linux-i686-2.6/nose/plugins
+
+creating build/lib.linux-i686-2.6/nose/sphinx
+
+copying nose/sphinx/pluginopts.py -> build/lib.linux-i686-2.6/nose/sphinx
+
+copying nose/sphinx/__init__.py -> build/lib.linux-i686-2.6/nose/sphinx
+
+creating build/lib.linux-i686-2.6/nose/ext
+
+copying nose/ext/__init__.py -> build/lib.linux-i686-2.6/nose/ext
+
+copying nose/ext/dtcompat.py -> build/lib.linux-i686-2.6/nose/ext
+
+copying nose/usage.txt -> build/lib.linux-i686-2.6/nose
+
+running install_lib
+
+creating /usr/local/lib/python2.6/dist-packages/nose
+
+error: could not create '/usr/local/lib/python2.6/dist-packages/nose': Permission denied
+
+----------------------------------------
+Command /usr/bin/python -c "import setuptools; __file__='/home/vinegareater/programming/ironpython/SLBot/build/nose/setup.py'; execfile('/home/vinegareater/programming/ironpython/SLBot/build/nose/setup.py')" install --single-version-externally-managed --record /tmp/pip-zUOrlA-record/install-record.txt --install-headers /home/vinegareater/programming/ironpython/SLBot/lib/include failed with error code 1
+Exception information:
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 252, in main
+    self.run(options, args)
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 410, in run
+    requirement_set.install(install_options)
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 2017, in install
+    requirement.install(install_options)
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 1515, in install
+    cwd=self.source_dir, filter_stdout=self._filter_install, show_stdout=False)
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 3543, in call_subprocess
+    % (command_desc, proc.returncode))
+InstallationError: Command /usr/bin/python -c "import setuptools; __file__='/home/vinegareater/programming/ironpython/SLBot/build/nose/setup.py'; execfile('/home/vinegareater/programming/ironpython/SLBot/build/nose/setup.py')" install --single-version-externally-managed --record /tmp/pip-zUOrlA-record/install-record.txt --install-headers /home/vinegareater/programming/ironpython/SLBot/lib/include failed with error code 1
